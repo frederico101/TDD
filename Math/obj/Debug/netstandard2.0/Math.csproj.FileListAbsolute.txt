@@ -1,0 +1,9 @@
+/home/developer/Documents/UnidadeTestes/Math/bin/Debug/netstandard2.0/Math.deps.json
+/home/developer/Documents/UnidadeTestes/Math/bin/Debug/netstandard2.0/Math.dll
+/home/developer/Documents/UnidadeTestes/Math/bin/Debug/netstandard2.0/Math.pdb
+/home/developer/Documents/UnidadeTestes/Math/obj/Debug/netstandard2.0/Math.csprojAssemblyReference.cache
+/home/developer/Documents/UnidadeTestes/Math/obj/Debug/netstandard2.0/Math.AssemblyInfoInputs.cache
+/home/developer/Documents/UnidadeTestes/Math/obj/Debug/netstandard2.0/Math.AssemblyInfo.cs
+/home/developer/Documents/UnidadeTestes/Math/obj/Debug/netstandard2.0/Math.csproj.CoreCompileInputs.cache
+/home/developer/Documents/UnidadeTestes/Math/obj/Debug/netstandard2.0/Math.dll
+/home/developer/Documents/UnidadeTestes/Math/obj/Debug/netstandard2.0/Math.pdb
