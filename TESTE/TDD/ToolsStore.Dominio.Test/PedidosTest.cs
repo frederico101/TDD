@@ -1,4 +1,5 @@
 using System;
+using ToolsStore.Domain;
 using Xunit;
 
 namespace ToolsStore.Dominio.Test
@@ -12,10 +13,10 @@ namespace ToolsStore.Dominio.Test
             //Arrange
              var pedido = new Pedido();
             //Act
-            var pedidoItem = new PedidoItem();
-            var result = pedido.AddPedidoItem(); 
+            var pedidoItem = new PedidoItem(Guid.NewGuid(),"Serra",2,50);
+            pedido.AdicionarPedido(pedidoItem);
             //Assert
-            Assert(150, result);
+            Assert.Equal(100, pedido.ValorTotal);
 
         }
     }
