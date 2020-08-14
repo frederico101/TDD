@@ -20,7 +20,6 @@ namespace ToolsStore.Domain
         {
             Quantidade += unidades;
         }
-        internal decimal CalcularValor()=> Quantidade * ValorUnitario;
 
     }
 

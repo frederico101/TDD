@@ -12,12 +12,6 @@ namespace ToolsStore.Domain
             _pedidoItems = new List<PedidoItem>();
         }
         public int ValorTotal { get; private set; }
-
-
-        public void CalcularValorPedido()
-        {
-            ValorTotal = _pedidoItems.Sum(i => i.CalcularValorPedido());
-        }
         
         public  IReadOnlyCollection<PedidoItem> PedidoItems => _pedidoItems;
         public void AdicionarPedido(PedidoItem pedidoItem)
@@ -31,7 +25,7 @@ namespace ToolsStore.Domain
               }
 
             _pedidoItems.Add(pedidoItem);
-            
+            ValorTotal = _pedidoItems.Sum(i => i.Quantidade * i.ValorUnitario);
         }
     }
 }
