@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/TesteDeUnidade/MathTesteUnidade/MathTesteUnidade.csproj",
+                "${workspaceFolder}/ApiTestDeUnidade.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/TesteDeUnidade/MathTesteUnidade/MathTesteUnidade.csproj",
+                "${workspaceFolder}/ApiTestDeUnidade.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/TesteDeUnidade/MathTesteUnidade/MathTesteUnidade.csproj",
+                "${workspaceFolder}/ApiTestDeUnidade.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
