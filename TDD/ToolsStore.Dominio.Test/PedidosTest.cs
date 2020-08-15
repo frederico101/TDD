@@ -23,9 +23,9 @@ namespace ToolsStore.Dominio.Test
 
         }
 
-        [Fact(DisplayName = "PedidosVerificaUnidades")]
+        [Fact(DisplayName = "SomaUnidades")]
         [Trait("Categoria", "PedidosVerificaUnidadesTeste")]
-        public void AdicionarItemPedido_ItemExistente_DeveIncrementarESomarValores_()
+        public void AdicionarItemPedido_SomaItemExistente_DeveIncrementarESomarValores()
         {
             //Arrange
             var pedido = Pedido.PedidoFactory.NovoPedidoRascunho(Guid.NewGuid());
@@ -68,20 +68,5 @@ namespace ToolsStore.Dominio.Test
             //Act && Assert;
             Assert.Throws<DomainException>(()=> pedido.AdicionarPedido(pedidoItem02));
         }
-
-        [Fact(DisplayName = "AtualizarPedidoNaLista")]
-        [Trait("Categoria02", "AtualizarPedidoNaListaTest")]
-        public void Atualizar_AtualizarPedidoNaLista_DeveRetornarExceptions()
-        {
-            //Arrange
-            var produtoId = Guid.NewGuid();
-            var pedido = Pedido.PedidoFactory.NovoPedidoRascunho(Guid.NewGuid());
-            var pedidoItem = new PedidoItem(produtoId, "Serra", 5 , 100);
-            pedido.AdicionarPedido(pedidoItem);
-            //Act && Assert;
-            Assert.Throws<DomainException>(()=> pedido.AtualizarPedido(pedidoItem));
-        }
-
-        
     }
 }
