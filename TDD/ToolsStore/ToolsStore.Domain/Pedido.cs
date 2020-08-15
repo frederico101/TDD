@@ -45,7 +45,7 @@ namespace ToolsStore.Domain
                }*/
         }
 
-       public void CalcularValorTotal()
+       public void CalcularValorPedido()
        {
          ValorTotal = _pedidoItems.Sum(i => i.Quantidade * i.ValorUnitario);
        }
