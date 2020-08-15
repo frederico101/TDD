@@ -25,17 +25,29 @@ namespace ToolsStore.Domain
         public bool ProdutoExistente(PedidoItem item) =>
             _pedidoItems.Any(p => p.ProdutoId == item.ProdutoId);
 
+        public void ValidaeQuantidadeItemPermitido(PedidoItem item)
+        {
+            var quatidateItems = item.Quantidade;
+            if (ProdutoExistente(item))
+            {
+                var itemsExistentes = _pedidoItems.FirstOrDefault(p => p.ProdutoId == item.ProdutoId);
+                quatidateItems += item.Quantidade;
+                if (quatidateItems > MAX_UNIDADES_ITEM)
+                    throw new DomainException($"Limite execedido {quatidateItems}");
+
+                itemsExistentes.AdicionarUnidades(item.Quantidade);
+                item = itemsExistentes;
+                _pedidoItems.Remove(itemsExistentes);
+            }
+        }
         public void AdicionarPedido(PedidoItem pedidoItem)
         {
-            if (pedidoItem.Quantidade > MAX_UNIDADES_ITEM)
-                throw new DomainException($"O maximo {MAX_UNIDADES_ITEM} items");
+            ValidaeQuantidadeItemPermitido(pedidoItem);
 
             if (ProdutoExistente(pedidoItem))
             {
                 var quatidateItem = pedidoItem.Quantidade;
                 var itemsExistentes = _pedidoItems.FirstOrDefault(p => p.ProdutoId == pedidoItem.ProdutoId);
-                if (quatidateItem + itemsExistentes.Quantidade > MAX_UNIDADES_ITEM)
-                    throw new DomainException($"aaaaaaaaaaaaaaaaaaeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
 
                 itemsExistentes.AdicionarUnidades(pedidoItem.Quantidade);
                 pedidoItem = itemsExistentes;
@@ -43,10 +55,11 @@ namespace ToolsStore.Domain
             }
 
             _pedidoItems.Add(pedidoItem);
-
-
-
             ValorTotal = _pedidoItems.Sum(i => i.Quantidade * i.ValorUnitario);
+        }
+        public void AtualizarPedido(PedidoItem pedidoItem)
+        {
+             if (!ProdutoExistente(pedidoItem))  throw new DomainException($"Produto não exite na lista");
 
         }
 

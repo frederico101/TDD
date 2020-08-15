@@ -69,6 +69,19 @@ namespace ToolsStore.Dominio.Test
             Assert.Throws<DomainException>(()=> pedido.AdicionarPedido(pedidoItem02));
         }
 
+        [Fact(DisplayName = "AtualizarPedidoNaLista")]
+        [Trait("Categoria02", "AtualizarPedidoNaListaTest")]
+        public void Atualizar_AtualizarPedidoNaLista_DeveRetornarExceptions()
+        {
+            //Arrange
+            var produtoId = Guid.NewGuid();
+            var pedido = Pedido.PedidoFactory.NovoPedidoRascunho(Guid.NewGuid());
+            var pedidoItem = new PedidoItem(produtoId, "Serra", 5 , 100);
+            pedido.AdicionarPedido(pedidoItem);
+            //Act && Assert;
+            Assert.Throws<DomainException>(()=> pedido.AtualizarPedido(pedidoItem));
+        }
+
         
     }
 }
