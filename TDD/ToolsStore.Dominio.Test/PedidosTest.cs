@@ -9,8 +9,8 @@ namespace ToolsStore.Dominio.Test
     
     public class PedidosTest
     {
-        [Fact(DisplayName = "Pedidos")]
-        [Trait("Categoria", "Dominio")]
+        [Fact(DisplayName = "NovoPedido")]
+        [Trait("Categoria", "NovoPedidoTest")]
         public void AdicionarItemPedido_NovoPedido_DeveAtulizarValor()
         {
             //Arrange
@@ -24,7 +24,7 @@ namespace ToolsStore.Dominio.Test
         }
 
         [Fact(DisplayName = "PedidosVerificaUnidades")]
-        [Trait("Categoria", "Dominio")]
+        [Trait("Categoria", "PedidosVerificaUnidadesTeste")]
         public void AdicionarItemPedido_ItemExistente_DeveIncrementarESomarValores_()
         {
             //Arrange
@@ -43,8 +43,8 @@ namespace ToolsStore.Dominio.Test
 
         }
 
-        [Fact(DisplayName = "LançaException")]
-        [Trait("Categoria", "exception")]
+        [Fact(DisplayName = "Novo item acima do permitido")]
+        [Trait("Categoria", "NovoItemAcimaPermitidoTest")]
         public void AdicionarItemPedido_ItemAcima15Unidades_DeveRetornarExceptions()
         {
             //Arrange
@@ -53,6 +53,20 @@ namespace ToolsStore.Dominio.Test
             var pedidoItem = new PedidoItem(produtoId, "Serra", Pedido.MAX_UNIDADES_ITEM + 1 , 100);
             //Act && Assert
             Assert.Throws<DomainException>(()=>pedido.AdicionarPedido(pedidoItem));
+        }
+
+        [Fact(DisplayName = "SomaDosItemsAcimaDoPermitido")]
+        [Trait("Categoria", "SomaDosItemsAcimaDoPermitidoTest")]
+        public void AdicionarItemPedido_ItemsSomadosAcimaDoPermitido_DeveRetornarExceptions()
+        {
+            //Arrange
+            var produtoId = Guid.NewGuid();
+            var pedido = Pedido.PedidoFactory.NovoPedidoRascunho(Guid.NewGuid());
+            var pedidoItem = new PedidoItem(produtoId, "Serra", 1 , 100);
+            var pedidoItem02 = new PedidoItem(produtoId, "Serra", Pedido.MAX_UNIDADES_ITEM, 100);
+            pedido.AdicionarPedido(pedidoItem);
+            //Act && Assert;
+            Assert.Throws<DomainException>(()=> pedido.AdicionarPedido(pedidoItem02));
         }
 
         

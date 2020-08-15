@@ -22,15 +22,21 @@ namespace ToolsStore.Domain
 
 
         public IReadOnlyCollection<PedidoItem> PedidoItems => _pedidoItems;
+        public bool ProdutoExistente(PedidoItem item) =>
+            _pedidoItems.Any(p => p.ProdutoId == item.ProdutoId);
+
         public void AdicionarPedido(PedidoItem pedidoItem)
         {
             if (pedidoItem.Quantidade > MAX_UNIDADES_ITEM)
                 throw new DomainException($"O maximo {MAX_UNIDADES_ITEM} items");
-           
 
-            if (_pedidoItems.Any(p => p.ProdutoId == pedidoItem.ProdutoId))
+            if (ProdutoExistente(pedidoItem))
             {
+                var quatidateItem = pedidoItem.Quantidade;
                 var itemsExistentes = _pedidoItems.FirstOrDefault(p => p.ProdutoId == pedidoItem.ProdutoId);
+                if (quatidateItem + itemsExistentes.Quantidade > MAX_UNIDADES_ITEM)
+                    throw new DomainException($"aaaaaaaaaaaaaaaaaaeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
+
                 itemsExistentes.AdicionarUnidades(pedidoItem.Quantidade);
                 pedidoItem = itemsExistentes;
                 _pedidoItems.Remove(itemsExistentes);
