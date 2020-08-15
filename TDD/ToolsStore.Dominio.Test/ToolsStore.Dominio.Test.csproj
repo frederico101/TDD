@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ToolsStore\ToolsStore.Domain\ToolsStore.Domain.csproj" />
+    <ProjectReference Include="..\TDD\ToolsStore.Core\ToolsStore.Core.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,5 @@
 using System;
+using ToolsStore.Core.DomainObjects;
 
 namespace ToolsStore.Domain
 {
@@ -11,6 +12,8 @@ namespace ToolsStore.Domain
 
         public PedidoItem(Guid produtoId, string produtoNome, int quantidade, int valorUnitario)
         {
+            if (quantidade < Pedido.MIN_UNIDADES_ITEM)
+                throw new DomainException($"O minimo {Pedido.MIN_UNIDADES_ITEM} items");
             ProdutoId = produtoId;
             ProdutoNome = produtoNome;
             Quantidade = quantidade;

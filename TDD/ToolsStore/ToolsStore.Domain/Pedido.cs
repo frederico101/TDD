@@ -2,12 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using ToolsStore.Core.DomainObjects;
 
 namespace ToolsStore.Domain
 {
     public class Pedido
     {
-         public int MAX_UNIDADES_ITEM => 15;
+        public static int MAX_UNIDADES_ITEM => 15;
+        public static int MIN_UNIDADES_ITEM => 1;
 
         private readonly List<PedidoItem> _pedidoItems;
         protected Pedido()
@@ -22,7 +24,10 @@ namespace ToolsStore.Domain
         public IReadOnlyCollection<PedidoItem> PedidoItems => _pedidoItems;
         public void AdicionarPedido(PedidoItem pedidoItem)
         {
-            if(pedidoItem.Quantidade > MAX_UNIDADES_ITEM) throw new DomainException("O maximo de item é 15 items");
+            if (pedidoItem.Quantidade > MAX_UNIDADES_ITEM)
+                throw new DomainException($"O maximo {MAX_UNIDADES_ITEM} items");
+           
+
             if (_pedidoItems.Any(p => p.ProdutoId == pedidoItem.ProdutoId))
             {
                 var itemsExistentes = _pedidoItems.FirstOrDefault(p => p.ProdutoId == pedidoItem.ProdutoId);
@@ -68,24 +73,6 @@ namespace ToolsStore.Domain
         Pago = 4,
         Entregue = 5,
         Cancelado = 6
-    }
-
-    public class DomainException : Exception 
-    { 
-        public DomainException()
-        {
-            
-        }
-        public DomainException(string msg) : base(msg)
-        {
-            
-        }
-        public DomainException(string msg, Exception innerException) : base(msg, innerException)
-        {
-            
-        }
-        
-
     }
 
 }

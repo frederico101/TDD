@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using ToolsStore.Core.DomainObjects;
 using ToolsStore.Domain;
 using Xunit;
 
@@ -49,9 +50,11 @@ namespace ToolsStore.Dominio.Test
             //Arrange
             var produtoId = Guid.NewGuid();
             var pedido = Pedido.PedidoFactory.NovoPedidoRascunho(Guid.NewGuid());
-            var pedidoItem = new PedidoItem(produtoId, "Serra", 16, 100);
+            var pedidoItem = new PedidoItem(produtoId, "Serra", Pedido.MAX_UNIDADES_ITEM + 1 , 100);
             //Act && Assert
             Assert.Throws<DomainException>(()=>pedido.AdicionarPedido(pedidoItem));
         }
+
+        
     }
 }
