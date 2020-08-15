@@ -63,7 +63,7 @@ namespace ToolsStore.Dominio.Test
             var produtoId = Guid.NewGuid();
             var pedido = Pedido.PedidoFactory.NovoPedidoRascunho(Guid.NewGuid());
             var pedidoItem = new PedidoItem(produtoId, "Serra", 1 , 100);
-            var pedidoItem02 = new PedidoItem(produtoId, "Serra", Pedido.MAX_UNIDADES_ITEM + 1 , 100);
+            var pedidoItem02 = new PedidoItem(produtoId, "Serra", Pedido.MAX_UNIDADES_ITEM, 100);
             pedido.AdicionarPedido(pedidoItem);
             //Act && Assert;
             Assert.Throws<DomainException>(()=> pedido.AdicionarPedido(pedidoItem02));

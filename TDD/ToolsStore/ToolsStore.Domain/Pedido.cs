@@ -29,28 +29,26 @@ namespace ToolsStore.Domain
         }
         public bool PedidoItemExistente(PedidoItem item)
         {
-            return  _pedidoItems.Any(p => p.ProdutoId == item.ProdutoId);
-           
+            return _pedidoItems.Any(p => p.ProdutoId == item.ProdutoId);
+
         }
-        
-         public void ValidaQuantidadeItemPermitido(PedidoItem item)
+
+        public void ValidaQuantidadeItemPermitido(PedidoItem item)
         {
             var quatidateItems = item.Quantidade;
             if (PedidoItemExistente(item))
             {
                 var itemsExistentes = _pedidoItems.FirstOrDefault(p => p.ProdutoId == item.ProdutoId);
                 quatidateItems += item.Quantidade;
-                if (quatidateItems > MAX_UNIDADES_ITEM)
-                    throw new DomainException($"Limite execedido {quatidateItems}");
             }
+            if (quatidateItems > MAX_UNIDADES_ITEM)
+                throw new DomainException($"Limite execedido {quatidateItems}");
         }
-
-
 
         public void AdicionarPedido(PedidoItem item)
         {
-              ValidaQuantidadeItemPermitido(item);
-           
+            ValidaQuantidadeItemPermitido(item);
+
             if (PedidoItemExistente(item))
             {
                 var itemsExistentes = _pedidoItems.FirstOrDefault(p => p.ProdutoId == item.ProdutoId);
@@ -64,9 +62,14 @@ namespace ToolsStore.Domain
 
         }
 
-        public void AtualizarItem(PedidoItem item)
+        public void AtualizarItem(PedidoItem pedidoItem)
         {
-            ValidarPedidoExistente(item);
+            ValidarPedidoExistente(pedidoItem);
+
+            var ItemExistente = PedidoItems.FirstOrDefault(i => i.ProdutoId == pedidoItem.ProdutoId);
+            _pedidoItems.Remove(ItemExistente);
+            _pedidoItems.Add(pedidoItem);
+
         }
         public void ValidarPedidoExistente(PedidoItem item)
         {
