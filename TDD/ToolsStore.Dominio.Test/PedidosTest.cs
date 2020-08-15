@@ -45,25 +45,25 @@ namespace ToolsStore.Dominio.Test
 
         [Fact(DisplayName = "Novo item acima do permitido")]
         [Trait("Categoria", "NovoItemAcimaPermitidoTest")]
-        public void AdicionarItemPedido_ItemAcima15Unidades_DeveRetornarExceptions()
+        public void ValidaQuantidadeItemPermitido_ItemAcima15Unidades_DeveRetornarExceptions()
         {
             //Arrange
             var produtoId = Guid.NewGuid();
             var pedido = Pedido.PedidoFactory.NovoPedidoRascunho(Guid.NewGuid());
-            var pedidoItem = new PedidoItem(produtoId, "Serra", Pedido.MAX_UNIDADES_ITEM + 1 , 100);
+            var pedidoItem = new PedidoItem(produtoId, "Serra", Pedido.MAX_UNIDADES_ITEM + 1, 100);
             //Act && Assert
             Assert.Throws<DomainException>(()=>pedido.AdicionarPedido(pedidoItem));
         }
 
-        [Fact(DisplayName = "SomaDosItemsAcimaDoPermitido")]
-        [Trait("Categoria", "SomaDosItemsAcimaDoPermitidoTest")]
-        public void AdicionarItemPedido_ItemsSomadosAcimaDoPermitido_DeveRetornarExceptions()
+        [Fact(DisplayName = "Soma Total Para Compra")]
+        [Trait("Categoria", "SoamaTotalParaCompraTest")]
+        public void AdicionarItemPedido_SomaTotalDeItemsPermitidosParaVenda_DeveRetornarExceptions()
         {
             //Arrange
             var produtoId = Guid.NewGuid();
             var pedido = Pedido.PedidoFactory.NovoPedidoRascunho(Guid.NewGuid());
             var pedidoItem = new PedidoItem(produtoId, "Serra", 1 , 100);
-            var pedidoItem02 = new PedidoItem(produtoId, "Serra", Pedido.MAX_UNIDADES_ITEM, 100);
+            var pedidoItem02 = new PedidoItem(produtoId, "Serra", Pedido.MAX_UNIDADES_ITEM + 1 , 100);
             pedido.AdicionarPedido(pedidoItem);
             //Act && Assert;
             Assert.Throws<DomainException>(()=> pedido.AdicionarPedido(pedidoItem02));

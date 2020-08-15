@@ -13,7 +13,7 @@ namespace ToolsStore.Domain
         public PedidoItem(Guid produtoId, string produtoNome, int quantidade, int valorUnitario)
         {
             if (quantidade < Pedido.MIN_UNIDADES_ITEM)
-                throw new DomainException($"O minimo {Pedido.MIN_UNIDADES_ITEM} items");
+                throw new DomainException($"Limite minimo {Pedido.MIN_UNIDADES_ITEM} items");
             ProdutoId = produtoId;
             ProdutoNome = produtoNome;
             Quantidade = quantidade;
@@ -23,6 +23,10 @@ namespace ToolsStore.Domain
         internal void AdicionarUnidades(int unidades)
         {
             Quantidade += unidades;
+        }
+        internal decimal CalcularValor()
+        {
+            return Quantidade * ValorUnitario;
         }
         
     }
