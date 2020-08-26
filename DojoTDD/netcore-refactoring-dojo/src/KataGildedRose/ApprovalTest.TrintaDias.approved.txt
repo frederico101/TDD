@@ -1,0 +1,372 @@
+-------- dia 0 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, 10, 20
+Queijo Brie Envelhecido, 2, 0
+Elixir do Mangusto, 5, 7
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, 15, 20
+Ingressos para o concerto do Turisas, 10, 49
+Ingressos para o concerto do Turisas, 5, 49
+Bolo de Mana Conjurado, 3, 6
+
+-------- dia 1 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, 9, 19
+Queijo Brie Envelhecido, 1, 1
+Elixir do Mangusto, 4, 6
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, 14, 21
+Ingressos para o concerto do Turisas, 9, 50
+Ingressos para o concerto do Turisas, 4, 50
+Bolo de Mana Conjurado, 2, 4
+
+-------- dia 2 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, 8, 18
+Queijo Brie Envelhecido, 0, 2
+Elixir do Mangusto, 3, 5
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, 13, 22
+Ingressos para o concerto do Turisas, 8, 50
+Ingressos para o concerto do Turisas, 3, 50
+Bolo de Mana Conjurado, 1, 2
+
+-------- dia 3 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, 7, 17
+Queijo Brie Envelhecido, -1, 4
+Elixir do Mangusto, 2, 4
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, 12, 23
+Ingressos para o concerto do Turisas, 7, 50
+Ingressos para o concerto do Turisas, 2, 50
+Bolo de Mana Conjurado, 0, 0
+
+-------- dia 4 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, 6, 16
+Queijo Brie Envelhecido, -2, 6
+Elixir do Mangusto, 1, 3
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, 11, 24
+Ingressos para o concerto do Turisas, 6, 50
+Ingressos para o concerto do Turisas, 1, 50
+Bolo de Mana Conjurado, -1, 0
+
+-------- dia 5 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, 5, 15
+Queijo Brie Envelhecido, -3, 8
+Elixir do Mangusto, 0, 2
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, 10, 25
+Ingressos para o concerto do Turisas, 5, 50
+Ingressos para o concerto do Turisas, 0, 50
+Bolo de Mana Conjurado, -2, 0
+
+-------- dia 6 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, 4, 14
+Queijo Brie Envelhecido, -4, 10
+Elixir do Mangusto, -1, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, 9, 27
+Ingressos para o concerto do Turisas, 4, 50
+Ingressos para o concerto do Turisas, -1, 0
+Bolo de Mana Conjurado, -3, 0
+
+-------- dia 7 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, 3, 13
+Queijo Brie Envelhecido, -5, 12
+Elixir do Mangusto, -2, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, 8, 29
+Ingressos para o concerto do Turisas, 3, 50
+Ingressos para o concerto do Turisas, -2, 0
+Bolo de Mana Conjurado, -4, 0
+
+-------- dia 8 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, 2, 12
+Queijo Brie Envelhecido, -6, 14
+Elixir do Mangusto, -3, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, 7, 31
+Ingressos para o concerto do Turisas, 2, 50
+Ingressos para o concerto do Turisas, -3, 0
+Bolo de Mana Conjurado, -5, 0
+
+-------- dia 9 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, 1, 11
+Queijo Brie Envelhecido, -7, 16
+Elixir do Mangusto, -4, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, 6, 33
+Ingressos para o concerto do Turisas, 1, 50
+Ingressos para o concerto do Turisas, -4, 0
+Bolo de Mana Conjurado, -6, 0
+
+-------- dia 10 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, 0, 10
+Queijo Brie Envelhecido, -8, 18
+Elixir do Mangusto, -5, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, 5, 35
+Ingressos para o concerto do Turisas, 0, 50
+Ingressos para o concerto do Turisas, -5, 0
+Bolo de Mana Conjurado, -7, 0
+
+-------- dia 11 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -1, 8
+Queijo Brie Envelhecido, -9, 20
+Elixir do Mangusto, -6, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, 4, 38
+Ingressos para o concerto do Turisas, -1, 0
+Ingressos para o concerto do Turisas, -6, 0
+Bolo de Mana Conjurado, -8, 0
+
+-------- dia 12 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -2, 6
+Queijo Brie Envelhecido, -10, 22
+Elixir do Mangusto, -7, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, 3, 41
+Ingressos para o concerto do Turisas, -2, 0
+Ingressos para o concerto do Turisas, -7, 0
+Bolo de Mana Conjurado, -9, 0
+
+-------- dia 13 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -3, 4
+Queijo Brie Envelhecido, -11, 24
+Elixir do Mangusto, -8, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, 2, 44
+Ingressos para o concerto do Turisas, -3, 0
+Ingressos para o concerto do Turisas, -8, 0
+Bolo de Mana Conjurado, -10, 0
+
+-------- dia 14 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -4, 2
+Queijo Brie Envelhecido, -12, 26
+Elixir do Mangusto, -9, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, 1, 47
+Ingressos para o concerto do Turisas, -4, 0
+Ingressos para o concerto do Turisas, -9, 0
+Bolo de Mana Conjurado, -11, 0
+
+-------- dia 15 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -5, 0
+Queijo Brie Envelhecido, -13, 28
+Elixir do Mangusto, -10, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, 0, 50
+Ingressos para o concerto do Turisas, -5, 0
+Ingressos para o concerto do Turisas, -10, 0
+Bolo de Mana Conjurado, -12, 0
+
+-------- dia 16 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -6, 0
+Queijo Brie Envelhecido, -14, 30
+Elixir do Mangusto, -11, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, -1, 0
+Ingressos para o concerto do Turisas, -6, 0
+Ingressos para o concerto do Turisas, -11, 0
+Bolo de Mana Conjurado, -13, 0
+
+-------- dia 17 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -7, 0
+Queijo Brie Envelhecido, -15, 32
+Elixir do Mangusto, -12, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, -2, 0
+Ingressos para o concerto do Turisas, -7, 0
+Ingressos para o concerto do Turisas, -12, 0
+Bolo de Mana Conjurado, -14, 0
+
+-------- dia 18 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -8, 0
+Queijo Brie Envelhecido, -16, 34
+Elixir do Mangusto, -13, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, -3, 0
+Ingressos para o concerto do Turisas, -8, 0
+Ingressos para o concerto do Turisas, -13, 0
+Bolo de Mana Conjurado, -15, 0
+
+-------- dia 19 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -9, 0
+Queijo Brie Envelhecido, -17, 36
+Elixir do Mangusto, -14, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, -4, 0
+Ingressos para o concerto do Turisas, -9, 0
+Ingressos para o concerto do Turisas, -14, 0
+Bolo de Mana Conjurado, -16, 0
+
+-------- dia 20 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -10, 0
+Queijo Brie Envelhecido, -18, 38
+Elixir do Mangusto, -15, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, -5, 0
+Ingressos para o concerto do Turisas, -10, 0
+Ingressos para o concerto do Turisas, -15, 0
+Bolo de Mana Conjurado, -17, 0
+
+-------- dia 21 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -11, 0
+Queijo Brie Envelhecido, -19, 40
+Elixir do Mangusto, -16, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, -6, 0
+Ingressos para o concerto do Turisas, -11, 0
+Ingressos para o concerto do Turisas, -16, 0
+Bolo de Mana Conjurado, -18, 0
+
+-------- dia 22 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -12, 0
+Queijo Brie Envelhecido, -20, 42
+Elixir do Mangusto, -17, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, -7, 0
+Ingressos para o concerto do Turisas, -12, 0
+Ingressos para o concerto do Turisas, -17, 0
+Bolo de Mana Conjurado, -19, 0
+
+-------- dia 23 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -13, 0
+Queijo Brie Envelhecido, -21, 44
+Elixir do Mangusto, -18, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, -8, 0
+Ingressos para o concerto do Turisas, -13, 0
+Ingressos para o concerto do Turisas, -18, 0
+Bolo de Mana Conjurado, -20, 0
+
+-------- dia 24 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -14, 0
+Queijo Brie Envelhecido, -22, 46
+Elixir do Mangusto, -19, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, -9, 0
+Ingressos para o concerto do Turisas, -14, 0
+Ingressos para o concerto do Turisas, -19, 0
+Bolo de Mana Conjurado, -21, 0
+
+-------- dia 25 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -15, 0
+Queijo Brie Envelhecido, -23, 48
+Elixir do Mangusto, -20, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, -10, 0
+Ingressos para o concerto do Turisas, -15, 0
+Ingressos para o concerto do Turisas, -20, 0
+Bolo de Mana Conjurado, -22, 0
+
+-------- dia 26 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -16, 0
+Queijo Brie Envelhecido, -24, 50
+Elixir do Mangusto, -21, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, -11, 0
+Ingressos para o concerto do Turisas, -16, 0
+Ingressos para o concerto do Turisas, -21, 0
+Bolo de Mana Conjurado, -23, 0
+
+-------- dia 27 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -17, 0
+Queijo Brie Envelhecido, -25, 50
+Elixir do Mangusto, -22, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, -12, 0
+Ingressos para o concerto do Turisas, -17, 0
+Ingressos para o concerto do Turisas, -22, 0
+Bolo de Mana Conjurado, -24, 0
+
+-------- dia 28 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -18, 0
+Queijo Brie Envelhecido, -26, 50
+Elixir do Mangusto, -23, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, -13, 0
+Ingressos para o concerto do Turisas, -18, 0
+Ingressos para o concerto do Turisas, -23, 0
+Bolo de Mana Conjurado, -25, 0
+
+-------- dia 29 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -19, 0
+Queijo Brie Envelhecido, -27, 50
+Elixir do Mangusto, -24, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, -14, 0
+Ingressos para o concerto do Turisas, -19, 0
+Ingressos para o concerto do Turisas, -24, 0
+Bolo de Mana Conjurado, -26, 0
+
+-------- dia 30 --------
+Nome, PrazoParaVenda, Qualidade
+Corselete +5 DEX, -20, 0
+Queijo Brie Envelhecido, -28, 50
+Elixir do Mangusto, -25, 0
+Dente do Tarrasque, 0, 80
+Dente do Tarrasque, -1, 80
+Ingressos para o concerto do Turisas, -15, 0
+Ingressos para o concerto do Turisas, -20, 0
+Ingressos para o concerto do Turisas, -25, 0
+Bolo de Mana Conjurado, -27, 0
+

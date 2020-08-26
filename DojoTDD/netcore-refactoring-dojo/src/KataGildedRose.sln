@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeuAcerto.Selecao.KataGildedRose", "MeuAcerto.Selecao.KataGildedRose\MeuAcerto.Selecao.KataGildedRose.csproj", "{34E4B032-D96A-4EF6-9F9C-EF5032B2A010}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34E4B032-D96A-4EF6-9F9C-EF5032B2A010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E4B032-D96A-4EF6-9F9C-EF5032B2A010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E4B032-D96A-4EF6-9F9C-EF5032B2A010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E4B032-D96A-4EF6-9F9C-EF5032B2A010}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {724E5EBD-2E9B-4C3A-87C2-8FD4F6E80840}
+	EndGlobalSection
+EndGlobal
